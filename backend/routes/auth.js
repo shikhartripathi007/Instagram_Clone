@@ -8,11 +8,6 @@ const {Jwt_secret} = require("../keys");
 const requireLogin = require("../middlewares/requireLogin");
 
 
-router.get('/', (req,res) =>{
-    res.send("hello")
-})
-
-
 router.post('/signup', (req,res) =>{
     const { name, userName, email, password}= req.body;
 
